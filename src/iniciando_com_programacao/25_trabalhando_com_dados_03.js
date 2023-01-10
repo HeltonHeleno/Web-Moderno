@@ -1,13 +1,12 @@
-console.log(19.9 * 0.6);
+let idade = 31 
+console.log(typeof 31);
+console.log(typeof idade);
 
-let preco = 19.90;
-let desconto = 0.4;
-let precoComDesconto = preco * (1 - desconto);
-console.log(precoComDesconto);
+let salario = 4578.32;
+console.log(typeof salario);
 
-let nome = "Caderno"; // String (Texto) -> sequencia de simbolos
-let categoria = "Papelaria";
-console.log("Produto: " + nome 
-    + ", Categoria: " + categoria
-    + ", Preço: " + preco 
-    + ", Desconto: " + desconto);
+let estaChovendo = true // ou false 
+console.log(typeof estaChovendo);
+
+console.log(typeof "Teste");
+console.log(typeof 'Teste');
