@@ -6,8 +6,3 @@ function gerarNumerosEntre(min, max) {
     resolve (aleatorio)
   })
 }
-
-gerarNumerosEntre(10,11)
-    .then(num => num *10)
-    .then(numX10 => `O número gerado foi${numX10}`)
-    .then(console.log)
