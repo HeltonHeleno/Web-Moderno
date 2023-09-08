@@ -20,18 +20,19 @@
         <a href="exercicios/texto2.html">02 - Texto 2</a>
         <a href="exercicios/listas.html">03 - Listas</a>
         <a href="exercicios/listasAninhadas.html">04 - Listas Aninhadas</a>
+        <a href="exercicios/links.html">05 - Links</a>
     </nav>
     <section id="conteudo"></section>
     <footer>
         Curso de Web Moderno
     </footer>
     <script>
-        document.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('[wm-nav]').forEach(link => {
            const conteudo = document.getElementById('conteudo')
 
            link.onclick = function(e) {
             e.preventDefault()            
-            fetch(link.href)
+            fetch(link.getAttribute('[wm-nav]'))
                 .then(resp => resp.text())
                 .then(html => conteudo.innerHTML = html)
            } 
