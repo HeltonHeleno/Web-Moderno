@@ -13,8 +13,8 @@ const storage = multer.diskStorage({
     callback(null, './upload')
   },
   filename: function(req, file, callback) {
-    callback(null, `%{Date.now()}_${file.originalname}`)
-  },
+    callback(null, `${Date.now()}_${file.originalname}`)
+  }
 })
 
 const upload = multer({storage}).single('arquivo')
